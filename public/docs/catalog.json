@@ -27,6 +27,10 @@
     "color": "#3776ab",
     "topics": [
       {
+        "title": "uv Package Manager",
+        "path": "python/uv-package-manager.md"
+      },
+      {
         "title": "Python Idioms",
         "path": "python/python-idioms.md"
       }
@@ -37,6 +41,10 @@
     "icon": "🧠",
     "color": "#8a2be2",
     "topics": [
+      {
+        "title": "Local AI Architecture",
+        "path": "ai/local-llm-architecture.md"
+      },
       {
         "title": "smolagents",
         "path": "ai/smolagents.md"
