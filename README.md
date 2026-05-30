@@ -52,6 +52,30 @@ Compiles the application and moves the static assets into the `dist/` directory.
 ### `npm run deploy`
 Builds the project and immediately deploys the static files to Firebase Hosting.
 
+## Firebase Setup & Deployment
+
+If this is your first time setting up Firebase on a new machine, follow these steps to connect your local environment to your Firebase project:
+
+1. **Install Firebase CLI**:
+   ```bash
+   npm install -g firebase-tools
+   ```
+2. **Login to Firebase**:
+   ```bash
+   firebase login
+   ```
+   *(This will open a browser window for authentication)*
+3. **Initialize the Project** (if not already done):
+   ```bash
+   firebase init hosting
+   ```
+   - Select "Use an existing project" or "Create a new project".
+   - Set the public directory to `dist`.
+   - Configure as a single-page app: `Yes`.
+   - Set up automatic builds and deploys with GitHub: `No` (for now).
+
+Once authenticated, the automated skill will be able to run `npm run deploy` successfully.
+
 ## Automated Workflow (Antigravity Skill)
 
 This project is paired with a custom AI agent skill (`add-learning-log`). 
