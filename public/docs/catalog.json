@@ -1,5 +1,16 @@
 [
   {
+    "category": "Firebase",
+    "icon": "🔥",
+    "color": "#ffca28",
+    "topics": [
+      {
+        "title": "Firebase Basics",
+        "path": "firebase/firebase-basics.md"
+      }
+    ]
+  },
+  {
     "category": "Java",
     "icon": "☕",
     "color": "#f89820",
@@ -26,6 +37,10 @@
     "icon": "🧠",
     "color": "#8a2be2",
     "topics": [
+      {
+        "title": "smolagents",
+        "path": "ai/smolagents.md"
+      },
       {
         "title": "LLM Internals",
         "path": "ai/llm-internals.md"
