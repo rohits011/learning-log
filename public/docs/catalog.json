@@ -1,0 +1,46 @@
+[
+  {
+    "category": "Java",
+    "icon": "☕",
+    "color": "#f89820",
+    "topics": [
+      {
+        "title": "Concurrency Basics",
+        "path": "java/concurrency-basics.md"
+      }
+    ]
+  },
+  {
+    "category": "Python",
+    "icon": "🐍",
+    "color": "#3776ab",
+    "topics": [
+      {
+        "title": "Python Idioms",
+        "path": "python/python-idioms.md"
+      }
+    ]
+  },
+  {
+    "category": "AI & ML",
+    "icon": "🧠",
+    "color": "#8a2be2",
+    "topics": [
+      {
+        "title": "LLM Internals",
+        "path": "ai/llm-internals.md"
+      }
+    ]
+  },
+  {
+    "category": "Cybersecurity",
+    "icon": "🛡️",
+    "color": "#00ff00",
+    "topics": [
+      {
+        "title": "OWASP Top 10",
+        "path": "cyber/owasp-top-10.md"
+      }
+    ]
+  }
+]

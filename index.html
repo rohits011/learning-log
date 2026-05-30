@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Log</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <button id="menu-toggle" class="icon-button" aria-label="Toggle Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"></path></svg>
+      </button>
+      <div class="logo">Learning Log</div>
+    </header>
+
+    <div class="app-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">Learning Log</div>
+        </div>
+        <nav id="nav-container" class="nav-container">
+          <!-- Dynamically populated by JS -->
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div id="content" class="markdown-body">
+          <div class="welcome-screen">
+            <h1>Welcome to your Learning Log</h1>
+            <p>Select a topic from the sidebar to start reading.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Backdrop for mobile sidebar -->
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
