@@ -1,3 +1,4 @@
+import './firebase.js';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import hljs from 'highlight.js';
