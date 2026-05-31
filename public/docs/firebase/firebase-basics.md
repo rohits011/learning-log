@@ -29,13 +29,13 @@ To protect our API keys and database identifiers from being committed to public 
 
 ```ini
 # .env (Excluded from Git)
-VITE_FIREBASE_API_KEY=AIzaSyCWtY_IgAqmNEorZNXzmv4VK0L9H-BWZ-E
-VITE_FIREBASE_AUTH_DOMAIN=learning-log-5c9cf.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=learning-log-5c9cf
-VITE_FIREBASE_STORAGE_BUCKET=learning-log-5c9cf.firebasestorage.app
-VITE_FIREBASE_MESSAGING_SENDER_ID=789256131258
-VITE_FIREBASE_APP_ID=1:789256131258:web:eef525e84e08ece6e4e883
-VITE_FIREBASE_MEASUREMENT_ID=G-9H2GYF8SXB
+VITE_FIREBASE_API_KEY=your-api-key
+VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+VITE_FIREBASE_PROJECT_ID=your-project-id
+VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+VITE_FIREBASE_APP_ID=your-app-id
+VITE_FIREBASE_MEASUREMENT_ID=your-measurement-id
 ```
 
 > [!WARNING]

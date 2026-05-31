@@ -18,6 +18,10 @@
       {
         "title": "Concurrency Basics",
         "path": "java/concurrency-basics.md"
+      },
+      {
+        "title": "Java Basics",
+        "path": "java/java-basics.md"
       }
     ]
   },

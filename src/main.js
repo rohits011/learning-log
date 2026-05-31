@@ -16,6 +16,8 @@ const contentArea = document.getElementById('content');
 const menuToggle = document.getElementById('menu-toggle');
 const sidebar = document.getElementById('sidebar');
 const backdrop = document.getElementById('sidebar-backdrop');
+const searchInput = document.getElementById('sidebar-search');
+let globalCatalog = [];
 
 // Mobile sidebar toggling
 function toggleSidebar() {
@@ -29,15 +31,31 @@ backdrop.addEventListener('click', toggleSidebar);
 async function init() {
   try {
     const res = await fetch('/docs/catalog.json');
-    const catalog = await res.json();
-    buildSidebar(catalog);
+    globalCatalog = await res.json();
+    
+    // Search functionality
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const filteredCatalog = globalCatalog.map(cat => {
+          const filteredTopics = cat.topics.filter(topic => 
+            topic.title.toLowerCase().includes(query)
+          );
+          return { ...cat, topics: filteredTopics };
+        }).filter(cat => cat.topics.length > 0);
+        
+        buildSidebar(filteredCatalog, query.length > 0);
+      });
+    }
+
+    buildSidebar(globalCatalog);
   } catch (error) {
     console.error("Failed to load catalog", error);
     contentArea.innerHTML = `<div class="welcome-screen"><h2>Error Loading Catalog</h2><p>${error.message}</p></div>`;
   }
 }
 
-function buildSidebar(catalog) {
+function buildSidebar(catalog, isSearching = false) {
   navContainer.innerHTML = '';
   
   catalog.forEach(cat => {
@@ -50,6 +68,11 @@ function buildSidebar(catalog) {
     catHeader.className = 'category-header';
     catHeader.innerHTML = `<span style="color: ${cat.color}">${cat.icon}</span> ${cat.category}`;
     catDiv.appendChild(catHeader);
+    
+    // Toggle collapse on click
+    catHeader.addEventListener('click', () => {
+      catDiv.classList.toggle('collapsed');
+    });
     
     // Topics
     const ul = document.createElement('ul');
