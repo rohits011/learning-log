@@ -35,6 +35,10 @@
         "path": "python/uv-package-manager.md"
       },
       {
+        "title": "Static Analysis & Security",
+        "path": "python/static-analysis-linters.md"
+      },
+      {
         "title": "Python Idioms",
         "path": "python/python-idioms.md"
       }
@@ -67,6 +71,17 @@
       {
         "title": "OWASP Top 10",
         "path": "cyber/owasp-top-10.md"
+      }
+    ]
+  },
+  {
+    "category": "My Projects",
+    "icon": "🚀",
+    "color": "#ff4d4d",
+    "topics": [
+      {
+        "title": "Example Project (Template)",
+        "path": "projects/example-project.md"
       }
     ]
   }
