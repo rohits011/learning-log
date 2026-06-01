@@ -1,7 +1,7 @@
 [
   {
     "category": "Firebase",
-    "icon": "🔥",
+    "icon": "\ud83d\udd25",
     "color": "#ffca28",
     "topics": [
       {
@@ -12,7 +12,7 @@
   },
   {
     "category": "Java",
-    "icon": "☕",
+    "icon": "\u2615",
     "color": "#f89820",
     "topics": [
       {
@@ -27,7 +27,7 @@
   },
   {
     "category": "Python",
-    "icon": "🐍",
+    "icon": "\ud83d\udc0d",
     "color": "#3776ab",
     "topics": [
       {
@@ -46,7 +46,7 @@
   },
   {
     "category": "AI & ML",
-    "icon": "🧠",
+    "icon": "\ud83e\udde0",
     "color": "#8a2be2",
     "topics": [
       {
@@ -60,23 +60,35 @@
       {
         "title": "LLM Internals",
         "path": "ai/llm-internals.md"
+      },
+      {
+        "title": "Qdrant Vector Database",
+        "path": "ai/qdrant-vector-database.md"
+      },
+      {
+        "title": "LlamaIndex and RAG",
+        "path": "ai/llamaindex-and-rag.md"
       }
     ]
   },
   {
     "category": "Cybersecurity",
-    "icon": "🛡️",
+    "icon": "\ud83d\udee1\ufe0f",
     "color": "#00ff00",
     "topics": [
       {
         "title": "OWASP Top 10",
         "path": "cyber/owasp-top-10.md"
+      },
+      {
+        "title": "Age Encryption & SecretStr",
+        "path": "cyber/age-encryption-and-secretstr.md"
       }
     ]
   },
   {
     "category": "My Projects",
-    "icon": "🚀",
+    "icon": "\ud83d\ude80",
     "color": "#ff4d4d",
     "topics": [
       {
