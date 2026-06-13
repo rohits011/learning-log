@@ -46,9 +46,13 @@
   },
   {
     "category": "AI & ML",
-    "icon": "\ud83e\udde0",
+    "icon": "🧠",
     "color": "#8a2be2",
     "topics": [
+      {
+        "title": "Resilient AI Pipelines & Auto-Fallbacks",
+        "path": "ai/resilient-ai-pipelines.md"
+      },
       {
         "title": "Local AI Architecture",
         "path": "ai/local-llm-architecture.md"
@@ -94,6 +98,17 @@
       {
         "title": "Example Project (Template)",
         "path": "projects/example-project.md"
+      }
+    ]
+  },
+  {
+    "category": "Databases",
+    "icon": "\ud83d\uddc4\ufe0f",
+    "color": "#00758F",
+    "topics": [
+      {
+        "title": "SQL Execution Guide",
+        "path": "sql/sql-execution.md"
       }
     ]
   }
